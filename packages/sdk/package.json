@@ -1,0 +1,23 @@
+{
+  "name": "@mobx-devtools/sdk",
+  "version": "0.0.1",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "mobx": "^6.13.0"
+  },
+  "devDependencies": {
+    "mobx": "^6.13.7",
+    "typescript": "~5.7.2"
+  }
+}
